@@ -1,0 +1,430 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.footer_section {
+    background-color: #A9D1E0;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+
+}
+
+.link:hover {
+    color: white;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.video {
+    max-width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #A9D1E0;
+    height: 45px;
+    width: 100%;
+
+
+}
+
+.menu:hover {
+    color: white;
+}
+
+.contactus_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.banner_container {
+    overflow: hidden;
+    max-height: 640px;
+    position: relative;
+}
+
+.header_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.header_text {
+    color: white;
+    font-size: 6vw;
+    font-family: Utopia Std Caption;
+}
+
+.details_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.some_icon {
+    color: black;
+}
+
+.somelist_element {
+    margin: 20px;
+    justify-content: space-between;
+    display: inline-block;
+}
+
+.intro_text {
+    text-align: left;
+    font-family: Ten Oldstyle;
+    padding: 20px;
+    font-size: 2vw;
+    justify-content: space-around;
+}
+
+.mainphoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+}
+
+.contactus_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_item {
+    list-style: none;
+    text-decoration: none;
+}
+
+.homepage_link:hover {
+    color: white;
+
+}
+
+.homepage_link {
+    color: black;
+    font-size: 25px;
+    ;
+    margin: 3vw 0 2vw 2vw;
+}
+
+.navlink {
+    justify-content: center;
+    align-content: center;
+    margin: 3vw;
+}
+
+.navigation_container {
+    justify-content: space-between;
+    display: flex;
+    align-content: center;
+}
+
+.navigation_element {
+    justify-content: space-around;
+    text-align: center;
+    font-family: Utopis Std Caption;
+    margin: 0 0 0 4vw;
+}
+
+.some_list {
+    font-family: Utopia Std Caption;
+}
+
+.intro_container {
+    display: flex;
+}
+
+.main_container {
+    display: flex;
+}
+
+.intro_headline {
+    font-family: Ten Oldstyle;
+    font-size: 4vw;
+    text-align: right;
+}
+
+.destinations_headline {
+    color: #7CC385;
+    font-family: Fira Sans;
+    font-size: 2vw;
+    margin-left: 1vw;
+
+}
+
+.wheretogo {
+    text-align: center;
+    font-family: Utopia Std Caption;
+    font-size: 3vw;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    font-size: 1vw;
+    font-family: Utopia Std Caption;
+}
+
+.row::after {
+    clear: both;
+    display: table;
+    margin-top: 2vw;
+}
+
+.countries {
+    font-size: 1vw;
+}
+
+.destinations_description {
+    font-family: Fira Sans;
+    font-size: 2vw;
+    text-justify: auto;
+    margin: 1vw;
+}
+
+.countrydescription {
+    display: flex;
+    font-size: 2vw;
+    float: left;
+    font-family: Ten Oldstyle;
+    margin: 2vw 2vw 0 2vw;
+    overflow: auto;
+}
+
+.spain2 {
+    width: 40%;
+}
+
+.country_image {
+    width: 40%;
+    margin-left: 2vw;
+    margin-right: 1vw;
+}
+
+.country_headline {
+    font-size: 3vw;
+    font-family: Utopia Std Caption;
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+
+.source_countryimage {
+    font-size: 1vw;
+    margin-left: 59vw;
+}
+
+.tips_intro {
+    text-align: center;
+    font-family: Fira Sans;
+}
+
+.tips_headline {
+    color: #7CC385;
+    font-size: 3vw;
+}
+
+.authortips {
+    text-align: right;
+    font-size: 1vw;
+    font-family: Fira Sans;
+}
+
+.tips_introtext {
+    font-size: 2vw;
+}
+
+.tips {
+    display: flex;
+    font-size: 2vw;
+    float: left;
+    font-family: Ten Oldstyle;
+    margin: 2vw;
+    justify-content: center;
+    text-justify: auto;
+    border-style: solid;
+    border-width: 1vw;
+    border-color: #A9D1E0;
+    border-radius: 2vw;
+}
+
+.tips_image {
+    width: 40%;
+    margin-left: 2vw;
+}
+
+.tipstitleleft {
+    font-family: Fira Sans;
+    color: #7CC385;
+    font-size: 2vw;
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
+
+.tipssourceright {
+    font-size: 1vw;
+    margin-left: 59vw;
+}
+
+.tipstitleright {
+    font-family: Fira Sans;
+    color: #7CC385;
+    font-size: 2vw;
+    text-align: right;
+    float: right;
+}
+
+
+
+.endingline_tips {
+    text-align: center;
+    font-family: Fira Sans;
+    font-size: 2vw;
+    color: #7CC385;
+}
+
+.restaurants_intro {
+    font-family: Fira Sans;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.restaurants_headline {
+    font-size: 2vw;
+    color: #7CC385;
+}
+
+.resaturants_introtext {
+    font-size: 2vw;
+}
+
+.restaurants {
+    justify-content: space-between;
+    margin: 1vw;
+}
+
+.food_image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 1vw;
+}
+
+.restaurant_description {
+    font-family: Ten Oldstyle;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.resataurant_name {
+    font-family: Fira Sans;
+    color: #7CC385;
+    font-size: 2vw;
+    margin-left: 1vw;
+}
+
+.resataurant_adress {
+    font-family: Fira Sans;
+    font-size: 1vw;
+    margin-left: 1vw;
+}
+
+.cusine_title {
+    display: flex;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.modal_content {
+    background-color: #fefefe;
+    margin: 2% auto 15% auto;
+    padding: 25px;
+    border: 3px solid #888888;
+    width: 400px;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, -0.8);
+    font-family: Fira Sans;
+}
+
+
+.close {
+    float: right;
+    margin-right: 10px;
+    color: #000000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.animate {
+    animation: animatezoom 8s;
+
+}
+
+@keyframes animatezoom {
+    from {
+        margin-left: 100%
+    }
+
+    to {
+        margin-left: 0%
+    }
+}
+
+.searchform:hover .searchfield {
+    width: 100px;
+
+}
+
+.information {
+
+    background-color: #F3F7F9;
+}
+
+
+.tips_text {
+    margin: 1vw;
+}
