@@ -8,7 +8,7 @@
 }
 
 .footer_section {
-    background-color: #A9D1E0;
+    background-image: url(images/clouds.jpg);
     display: inline-block;
     align-items: center;
     justify-content: space-between;
@@ -34,11 +34,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #A9D1E0;
+    background-image: url(images/clouds.jpg);
     height: 45px;
     width: 100%;
-
-
+    position: fixed;
+    z-index: 2;
 }
 
 .menu:hover {
@@ -59,7 +59,10 @@
     position: relative;
 }
 
-.header_container {
+.header_text {
+    color: white;
+    font-size: 6vw;
+    font-family: Utopia Std Caption;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -97,13 +100,20 @@
     padding: 20px;
     font-size: 2vw;
     justify-content: space-around;
+    text-align: center;
 }
 
 .mainphoto {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 30%;
+    transition: transform .2s;
+
+}
+
+.mainphoto:hover {
+    transform: scale(1.4);
 }
 
 .nav_link {
@@ -111,11 +121,7 @@
     text-decoration: none;
 }
 
-.contactus_section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .menu_item {
     list-style: none;
@@ -130,7 +136,6 @@
 .homepage_link {
     color: black;
     font-size: 25px;
-    ;
     margin: 3vw 0 2vw 2vw;
 }
 
@@ -169,13 +174,16 @@
     font-family: Ten Oldstyle;
     font-size: 4vw;
     text-align: right;
+    margin-top: 1vw;
+    margin-right: 2vw;
 }
 
 .destinations_headline {
     color: #7CC385;
     font-family: Fira Sans;
     font-size: 2vw;
-    margin-left: 1vw;
+    margin-left: 2vw;
+    margin-top: 4vw;
 
 }
 
@@ -191,12 +199,14 @@
     padding: 5px;
     font-size: 1vw;
     font-family: Utopia Std Caption;
+    position: relative;
 }
 
 .row::after {
     clear: both;
     display: table;
     margin-top: 2vw;
+
 }
 
 .countries {
@@ -206,8 +216,10 @@
 .destinations_description {
     font-family: Fira Sans;
     font-size: 2vw;
-    text-justify: auto;
+    align-items: center;
     margin: 1vw;
+    justify-content: center;
+    text-align: center;
 }
 
 .countrydescription {
@@ -215,8 +227,10 @@
     font-size: 2vw;
     float: left;
     font-family: Ten Oldstyle;
-    margin: 2vw 2vw 0 2vw;
+    margin: 2vw;
     overflow: auto;
+    justify-content: center;
+    text-align: center;
 }
 
 .spain2 {
@@ -224,37 +238,38 @@
 }
 
 .country_image {
-    width: 40%;
+    float: right;
     margin-left: 2vw;
     margin-right: 1vw;
+    width: 40%;
+
 }
 
 .country_headline {
     font-size: 3vw;
     font-family: Utopia Std Caption;
-    margin-left: 2vw;
-    margin-top: 2vw;
-}
+    margin-left: 2vw;}
 
-.source_countryimage {
-    font-size: 1vw;
-    margin-left: 59vw;
-}
+
 
 .tips_intro {
     text-align: center;
     font-family: Fira Sans;
+
 }
 
 .tips_headline {
     color: #7CC385;
     font-size: 3vw;
+    margin-top: 10vw;
 }
 
 .authortips {
     text-align: right;
     font-size: 1vw;
     font-family: Fira Sans;
+    margin-right: 3vw;
+    font-style: italic;
 }
 
 .tips_introtext {
@@ -266,9 +281,9 @@
     font-size: 2vw;
     float: left;
     font-family: Ten Oldstyle;
-    margin: 2vw;
+    margin: 3vw;
     justify-content: center;
-    text-justify: auto;
+    text-justify: center;
     border-style: solid;
     border-width: 1vw;
     border-color: #A9D1E0;
@@ -278,12 +293,13 @@
 .tips_image {
     width: 40%;
     margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .tipstitleleft {
     font-family: Fira Sans;
     color: #7CC385;
-    font-size: 2vw;
+    font-size: 3vw;
     margin-left: 3vw;
     margin-top: 3vw;
 }
@@ -314,15 +330,19 @@
     font-family: Fira Sans;
     text-align: center;
     font-size: 2vw;
+
+
 }
 
 .restaurants_headline {
     font-size: 2vw;
     color: #7CC385;
+
 }
 
 .resaturants_introtext {
     font-size: 2vw;
+    margin: 3vw;
 }
 
 .restaurants {
@@ -344,19 +364,20 @@
     margin-right: 1vw;
     justify-content: center;
     font-size: 2vw;
+    text-align: center;
 }
 
 .resataurant_name {
     font-family: Fira Sans;
     color: #7CC385;
-    font-size: 2vw;
-    margin-left: 1vw;
+    font-size: 3vw;
+    margin-left: 2vw;
 }
 
 .resataurant_adress {
     font-family: Fira Sans;
-    font-size: 1vw;
-    margin-left: 1vw;
+    font-size: 2vw;
+    margin-left: 2vw;
 }
 
 .cusine_title {
@@ -366,7 +387,7 @@
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     left: 0;
     top: 0;
     width: 100%;
@@ -383,6 +404,8 @@
     width: 400px;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, -0.8);
     font-family: Fira Sans;
+
+
 }
 
 
@@ -400,7 +423,7 @@
 }
 
 .animate {
-    animation: animatezoom 8s;
+    animation: animatezoom 5s;
 
 }
 
@@ -426,5 +449,139 @@
 
 
 .tips_text {
-    margin: 1vw;
+ text-justify: auto;
+    text-align: center;
+    justify-content: center;
+    margin: 2vw;
+
 }
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    left: 7vw;
+    bottom: 10vw;
+}
+
+.column:hover .image {
+    opacity: 0.3;
+}
+
+.column:hover .middle {
+    opacity: 1;
+}
+
+.text {
+
+    color: black;
+    font-size: 2vw;
+    padding: 16px 32px;
+}
+
+.food_image:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+ .menu2 {
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(images/clouds.jpg);
+    height: 45px;
+    width: 100%;
+    }
+
+@media only screen and (max-width: 855px) {
+    .column {
+        width: 50%;
+    }
+
+    .middle {
+        left: 29%;
+        bottom: 50%;
+    }
+
+    .text {
+        font-size: 4vw;
+
+    }
+
+    .destinations_description {
+        font-size: 3vw;
+
+    }
+
+    .wheretogo {
+        font-size: 5vw;
+    }
+
+    .countrydescription {
+        font-size: 3vw;
+    }
+
+
+
+    .country_headline {
+        font-size: 4vw;
+    }
+
+    .destinations_headline {
+        margin-top: 10vw;
+        font-size: 3vw;
+    }
+
+    .resaturants_introtext {
+        margin-top: 10vw;
+        font-size: 3vw;
+    }
+
+    .tips {
+        border-radius: 1vw;
+        font-size: 3vw;
+        display: block;
+    }
+
+    .navigation_container {
+        font-size: 3vw;
+    }
+
+    .homepage_link {
+        font-size: 3vw;
+    }
+
+    .footer_section {
+        font-size: 3vw;
+    }
+
+    .tips_image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        width: 50%;
+
+    }
+    .tips_text {
+        margin: 3vw;
+        font-size: 3vw;
+    }
+    .restaurant_description {
+        font-size: 3vw;
+    }
+    .tips_image:hover {
+    transform: scale(1.3);
+
+}
+
+
